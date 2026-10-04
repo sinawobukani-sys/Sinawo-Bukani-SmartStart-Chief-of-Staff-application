@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Sinawo Bukani: Chief of Staff application for SmartStart</title>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;500;700;800&display=swap">
+<style>
+:root{--bg:#fbfcff;--ink:#17214d;--mute:#4e5878;--line:#d8def0;--card:#ffffff;--sun:#f5b700;--leaf:#2a8a57;--sky:#e8f0ff;--ph:#fff1b8;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0f1530;--ink:#eef1ff;--mute:#a9b2d6;--line:#2a3566;--card:#171e42;--sky:#1a2450;--ph:#5a4a10}}
+:root[data-theme="dark"]{--bg:#0f1530;--ink:#eef1ff;--mute:#a9b2d6;--line:#2a3566;--card:#171e42;--sky:#1a2450;--ph:#5a4a10}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--ink);font:17px/1.6 Outfit,system-ui,sans-serif}
+.wrap{max-width:900px;margin:0 auto;padding:0 22px}
+header{display:flex;justify-content:space-between;align-items:center;padding:20px 0}
+header b{font-weight:800}
+header a{color:var(--ink);text-decoration:none;margin-left:18px;font-size:15px}
+header a:hover{text-decoration:underline}
+.hero{padding:56px 0 64px}
+h1{font-weight:800;font-size:clamp(34px,6.2vw,60px);line-height:1.05;letter-spacing:-.02em;margin:0 0 24px;max-width:19ch}
+h1 span{background:linear-gradient(transparent 62%,var(--sun) 62%)}
+.hero p{font-size:clamp(18px,2.4vw,21px);max-width:58ch;color:var(--mute);margin:0 0 28px}
+.btn{display:inline-block;background:var(--ink);color:var(--bg);font-weight:700;padding:13px 24px;border-radius:999px;text-decoration:none}
+.btn:focus-visible,a:focus-visible{outline:3px solid var(--sun);outline-offset:3px}
+section{padding:52px 0;border-top:1px solid var(--line)}
+h2{font-weight:800;font-size:clamp(26px,4vw,38px);line-height:1.1;margin:0 0 14px}
+.intro{color:var(--mute);max-width:62ch;margin:0 0 28px}
+.ph{background:var(--ph);padding:0 5px;border-radius:4px}
+.path{display:grid;grid-template-columns:repeat(auto-fit,minmax(240px,1fr));gap:14px}
+.path div{background:var(--sky);border-radius:14px;padding:18px 20px}
+.path h3{margin:0 0 6px;font-size:19px}
+.path p{margin:0;color:var(--mute);font-size:16px}
+.rows{display:grid;gap:12px}
+.row{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px;display:grid;grid-template-columns:1fr 150px;gap:6px 20px}
+.row h3{margin:0 0 4px;font-size:19px}
+.row p{margin:0;color:var(--mute)}
+.tag{align-self:start;justify-self:end;font-size:14px;font-weight:700;padding:4px 12px;border-radius:999px;white-space:nowrap}
+.t1{background:var(--leaf);color:#fff}
+.t2{background:var(--sun);color:#17214d}
+.t3{border:2px solid var(--ink);color:var(--ink)}
+.plan{list-style:none;padding:0;margin:0;display:grid;gap:12px}
+.plan li{display:grid;grid-template-columns:110px 1fr;gap:18px;background:var(--card);border:1px solid var(--line);border-radius:14px;padding:18px 20px}
+.plan .d{font-weight:800;color:var(--leaf);line-height:1.4}
+.plan h3{margin:0 0 4px;font-size:19px}
+.plan p{margin:0;color:var(--mute)}
+.bound{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:12px}
+.bound div{background:var(--sky);border-radius:14px;padding:16px 18px}
+.bound b{display:block;margin-bottom:4px}
+.bound span{color:var(--mute);font-size:15px}
+.brief{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:24px;max-width:660px}
+.brief h3{margin:0 0 4px}
+.brief small{color:var(--mute)}
+.brief dl{margin:16px 0 0;display:grid;grid-template-columns:140px 1fr;gap:10px 16px}
+.brief dt{font-weight:700}
+.brief dd{margin:0;color:var(--mute)}
+footer{padding:56px 0 64px;border-top:1px solid var(--line)}
+footer p{color:var(--mute);max-width:54ch}
+@media (max-width:600px){.row{grid-template-columns:1fr}.tag{justify-self:start;order:-1}.plan li{grid-template-columns:1fr;gap:4px}.brief dl{grid-template-columns:1fr;gap:2px}.brief dd{margin-bottom:10px}header a{margin-left:10px}}
+.stat{display:grid;grid-template-columns:repeat(auto-fit,minmax(180px,1fr));gap:14px;margin-bottom:16px}.stat div{background:var(--sky);border-radius:14px;padding:18px 20px}.stat b{display:block;font-size:34px;font-weight:800;line-height:1.1}.stat span{color:var(--mute);font-size:15px}
+</style>
+</head>
+<body>
+<div class="wrap">
+<header><b>Sinawo Bukani</b><nav><a href="#path">My path</a><a href="#fit">Fit</a><a href="#plan">90 days</a><a href="#contact">Contact</a></nav></header>
+
+<div class="hero">
+<h1>A Chief of Staff creates leverage, not dependency. Here is how I'd <span>do that</span> for SmartStart.</h1>
+<p>I'm Sinawo Bukani, Head of Editorial Content at a grant-funded news start-up, reporting directly to the CEO. I started my career in audit and asset management, then moved into content and communications.</p>
+<a class="btn" href="#fit">See how I match the role</a>
+</div>
+
+<section id="path">
+<h2>An unusual path, with a pattern</h2>
+<p class="intro">Controls and accuracy first, then communication and delivery. Both matter in this role.</p>
+<div class="path">
+<div><h3>Audit and assets</h3><p>I started in asset auditing at PricewaterhouseCoopers and worked my way up to leading the largest Eastern Cape region, overseeing the team, client reports and stakeholder reviews. The work taught me to be exact and to explain findings clearly to the people who had to act on them.</p></div>
+<div><h3>Content and campaigns</h3><p>In agencies and brands I led content strategy, pitched ideas to clients, and led thought-leadership content for an agency's six-member executive team. I also helped build the agency's new business development division and scale the social team into a full department.</p></div>
+<div><h3>Editorial leadership</h3><p>I now lead the editorial function of a grant-funded start-up, reporting directly to the CEO. I hired and trained a team of eight and run the weekly operating rhythm that keeps pitches, approvals, deadlines, quality control and external partners moving as one.</p></div>
+</div>
+</section>
+
+<section id="results">
+<h2>What changed on my watch</h2>
+<p class="intro">What I've delivered in the six months since I joined as Head of Editorial Content, reporting to the CEO.</p>
+<div class="stat">
+<div><b>10x</b><span>monthly website views, from about 6,000 to 60,000</span></div>
+<div><b>8</b><span>people hired and trained into one working team</span></div>
+<div><b>2</b><span>partnerships with other publications</span></div>
+<div><b>1</b><span>funder case study featuring us as a success story</span></div>
+</div>
+<div class="path" style="margin-top:20px">
+<div><h3>Grant accountability</h3><p>I oversee grant compliance and funder reporting, translating the funder's expectations into delivery commitments the team can meet. The funder recently featured our publication as a success story in its latest case study.</p></div>
+<div><h3>Reporting to the Board</h3><p>I help the CEO prepare reports for our Board: drafting sections, pulling together the figures, summarising the team's work, checking accuracy and getting everything into the Board's format on deadline.</p></div>
+<div><h3>A team and a rhythm</h3><p>I hired and trained all eight people and set a weekly cycle with clear owners, approvals and a main production day, so quality doesn't depend on one person.</p></div>
+<div><h3>Testing new work</h3><p>I led our pilot influencer campaign and work with our two publication partners.</p></div>
+</div>
+<p class="intro" style="margin-top:22px">I believe the team results came from five changes: a fixed weekly cycle, a structured review of every idea before it goes ahead, an SEO standard on every article, paid promotion for the stories with the most potential, and video and creator collaborations that reached new audiences.</p>
+</section>
+
+<section id="fit">
+<h2>The role, and where I stand</h2>
+<p class="intro">Each row is one thing the specification asks for, followed by my evidence and an honest rating.</p>
+<div class="rows">
+<div class="row"><div><h3>Increase the CEO's leverage</h3><p>I translate the CEO's priorities into plans my team can deliver, and at the start of each week I send a shortlist for approval so decisions reach the right person with context. Earlier, I led thought-leadership content for an agency's six-member executive team, turning each leader's thinking into clear communication.</p></div><span class="tag t1">Direct experience</span></div>
+<div class="row"><div><h3>Disciplined follow-through</h3><p>I hired and trained a team of eight and lead them on a fixed weekly cycle with deadlines, a named owner at each handoff and a final approval step.</p></div><span class="tag t1">Direct experience</span></div>
+<div class="row"><div><h3>Influence without formal authority</h3><p>I've worked across strategy, studio, production, PR and partner agencies, including coordinating partner agencies on national campaign launches.</p></div><span class="tag t1">Direct experience</span></div>
+<div class="row"><div><h3>Turning vision into operations and revenue</h3><p>In a grant-funded start-up, I turn the CEO's vision into editorial processes and look for ways those processes can earn money as well as serve the mission. <span class="ph">Add one concrete example, with a number.</span></p></div><span class="tag t1">Direct experience</span></div>
+<div class="row"><div><h3>Managing several layers at once</h3><p>Grant funding adds another layer to manage alongside the CEO's priorities and daily delivery. <span class="ph">Describe it: what you report, to whom, and how you keep the layers aligned.</span></p></div><span class="tag t1">Direct experience</span></div>
+<div class="row"><div><h3>Time-bound strategic initiatives</h3><p>I was the point of contact for innovation initiatives at an agency and led ideation for its AI influencer venture and the launch of an internal production company. I've also contributed to new-business proposals. In my current role I led our pilot influencer campaign.</p></div><span class="tag t2">Adjacent</span></div>
+<div class="row"><div><h3>Governance, controls and risk</h3><p>At PwC I checked records against documents, kept audit trails and assessed financials for legal compliance. That was early in my career, and it included leading a regional audit team. I've set approval chains since. I'd learn SmartStart's decision-rights framework before suggesting changes.</p></div><span class="tag t2">Adjacent</span></div>
+<div class="row"><div><h3>Enterprise operations</h3><p>I've built checklists, review steps and standards that keep quality steady as volume grows, and earlier led a team that managed records, suppliers and client reporting. <span class="ph">Add any budget or vendor work.</span></p></div><span class="tag t2">Adjacent</span></div>
+<div class="row"><div><h3>Board enablement</h3><p>I've helped the CEO prepare reports for our Board, so I know what decision-ready material takes. I haven't served on a Board myself, and I'd learn Board practice quickly through the Company Secretary and the Audit &amp; Risk process. I draft sections, compile the figures and check the report for accuracy.</p></div><span class="tag t2">Adjacent</span></div>
+<div class="row"><div><h3>Legal and governance oversight</h3><p>I have no legal training. I'd treat specialist counsel's judgement as theirs, and focus on making sure risks are escalated clearly and early.</p></div><span class="tag t3">Closing the gap</span></div>
+<div class="row"><div><h3>Global expansion readiness</h3><p>I haven't led international expansion. At agile42 I worked with teams across Germany, the USA, Sweden, Italy and Turkey to align content across markets while meeting local needs. That is a start, not market-entry experience.</p></div><span class="tag t2">Adjacent</span></div>
+</div>
+</section>
+
+<section>
+<h2>How I'd hold the boundaries</h2>
+<p class="intro">The specification is clear that this role must not become a gatekeeper or a parallel centre of execution. That is how I'd work too.</p>
+<div class="bound">
+<div><b>I route, I don't absorb</b><span>Work goes to the accountable owner with context and a recommendation.</span></div>
+<div><b>I bring options</b><span>I arrive with analysis and a view, not unprocessed problems.</span></div>
+<div><b>I challenge, then align</b><span>I push back privately, then back the decision once it's made.</span></div>
+<div><b>Others keep their mandates</b><span>The MD, CFO and specialist leads own their areas.</span></div>
+</div>
+</section>
+
+<section id="plan">
+<h2>My first 90 days</h2>
+<p class="intro">Built around what the role asks for. I'd take ownership of the CEO's follow-through from the first week, because that's what the role needs, and by day 90 I'd want the Office of the CEO to run on a rhythm that doesn't depend on me.</p>
+<ol class="plan">
+<li><div class="d">Week 1</div><div><h3>Own the CEO's follow-through</h3><p><b>The role asks for:</b> more CEO leverage and disciplined follow-through. I'd agree her top priorities for the quarter, run her follow-ups, route anything that isn't hers to decide to the right owner, and close open loops. I'd start a log of commitments and decisions with an owner and date for each, take over her Board and funder calendar, and begin SmartStart's child safeguarding induction.</p></div></li>
+<li><div class="d">Days 8 to 30</div><div><h3>Run the executive rhythm and map decision rights</h3><p><b>The role asks for:</b> executive governance and clear decision rights. I'd run the executive forum from week two, with an agenda, tracked actions and follow-up. I'd meet each executive and key partner, and map who decides what today and where decisions stall. On day 30, I'd give the CEO a written read-out: what I found, what I'd change first, and what I'd leave alone.</p></div></li>
+<li><div class="d">Days 31 to 60</div><div><h3>Own the Board cycle and the risk picture</h3><p><b>The role asks for:</b> Board enablement and legal and governance oversight. I'd run the Board and committee cycle: calendar, papers in a standard decision-ready format, and follow-up on resolutions. With specialist advisers, I'd build a governance and legal risk register so risks reach the CEO early and clearly. I'd send the CEO a monthly update on commitments, risks and decisions waiting.</p></div></li>
+<li><div class="d">Days 61 to 90</div><div><h3>Close one process and scope expansion</h3><p><b>The role asks for:</b> enterprise operations and expansion readiness. I'd take one operational process from problem to a working fix, handed to its permanent owner. I'd draft a scope for early expansion readiness, with market-entry decisions left to the CEO and Board. At day 90, I'd review with the CEO what is working, what I should hand over, and what comes next.</p></div></li>
+</ol>
+</section>
+
+<section id="note">
+<h2>How I'd write to the CEO</h2>
+<p class="intro">A decision-ready note in the format I use. The content is invented and only shows the structure.</p>
+<div class="brief">
+<h3>Decision note</h3><small>Illustrative example, not real SmartStart data</small>
+<dl>
+<dt>Decision needed</dt><dd>Whether to take on a new partnership proposal this quarter.</dd>
+<dt>Options</dt><dd>Accept as proposed, accept with a smaller pilot, or defer to next quarter.</dd>
+<dt>Recommendation</dt><dd>Smaller pilot. It tests the partnership while keeping team capacity free.</dd>
+<dt>Risks</dt><dd>Reputational if it stalls. Capacity strain on the programmes team.</dd>
+<dt>Owner if approved</dt><dd>The MD, with a check-in at 60 days.</dd>
+</dl>
+</div>
+</section>
+
+<section>
+<h2>How I'm closing my gaps</h2>
+<p class="intro">I don't have a postgraduate degree, and my National Diploma in Public Administration and Management is still pending. My completed qualifications include a National Certificate in Advertising: Digital Marketing and a Harvard Business Publishing leadership programme, so I'm offering senior experience and a plan to build what's missing. My client work includes non-profit and education organisations such as Tears Foundation and Umuzi Academy, but not early childhood development.</p>
+<p class="intro"><span class="ph">Choose what's true and add dates: a governance or board-practice course, a postgraduate diploma, legal literacy training, reading on early childhood development, conversations with people at social-impact organisations.</span></p>
+</section>
+
+<footer id="contact">
+<h2>Let's talk</h2>
+<p>I'd welcome the chance to walk through this and hear where I've misread the role.</p>
+<a class="btn" href="mailto:sinawobukani@gmail.com">Email Sinawo</a>
+</footer>
+</div>
+</body>
+</html>
